@@ -1,162 +1,168 @@
 <!DOCTYPE html>
 <html class="light" lang="ko">
 <head>
-    <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>Mungstep | 프리미엄 반려견 라이프스타일</title>
-    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,container-queries"></script>
-    <link href="https://fonts.googleapis.com" rel="preconnect" />
-    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
-    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Inter:wght@300;400;600&family=Noto+Sans+KR:wght@300;400;500;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
-    <script>
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    colors: {
-                        primary: "#111111",
-                        "background-light": "#fcfcfc",
-                        "background-dark": "#0a0a0a",
-                    },
-                    fontFamily: {
-                        display: ["Bodoni Moda", "serif"],
-                        body: ["Noto Sans KR", "Inter", "sans-serif"],
-                        accent: ["Playfair Display", "serif"],
-                    },
-                },
-            },
-        };
-    </script>
-    <style type="text/tailwindcss">
-        .text-hero {
-            font-size: clamp(4rem, 18vw, 20rem);
-            line-height: 0.85;
-            letter-spacing: -0.02em;
-            font-weight: 800;
-        }
-        .mix-difference {
-            mix-blend-mode: difference;
-        }
-        /* 부드러운 이미지 트랜지션 */
-        .img-hover-effect {
-            @apply transition-transform duration-1000 ease-out hover:scale-105;
-        }
-    </style>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Mungstep | 프리미엄 반려견 라이프스타일</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,container-queries"></script>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Inter:wght@300;400;600&family=Noto+Sans+KR:wght@300;400;500;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#111111",
+                        "background-light": "#fcfcfc",
+                        "background-dark": "#0a0a0a",
+                    },
+                    fontFamily: {
+                        display: ["Bodoni Moda", "serif"],
+                        body: ["Noto Sans KR", "Inter", "sans-serif"],
+                        accent: ["Playfair Display", "serif"],
+                    },
+                },
+            },
+        };
+    </script>
+    <style type="text/tailwindcss">
+        .text-hero {
+            font-size: clamp(4rem, 18vw, 20rem);
+            line-height: 0.85;
+            letter-spacing: -0.02em;
+            font-weight: 800;
+        }
+        .mix-difference {
+            mix-blend-mode: difference;
+        }
+        /* 부드러운 이미지 트랜지션 */
+        .img-hover-effect {
+            @apply transition-transform duration-1000 ease-out hover:scale-105;
+        }
+    </style>
 </head>
 <body class="bg-background-light dark:bg-background-dark text-primary dark:text-white font-body transition-colors duration-500 antialiased selection:bg-primary selection:text-white dark:selection:bg-white dark:selection:text-primary">
-    
-    <nav class="fixed top-0 w-full z-50 px-6 py-8 md:px-12 flex justify-between items-center mix-difference text-white">
-        <div class="text-xs tracking-[0.3em] uppercase font-bold font-inter">Mungstep</div>
-        <div class="hidden md:flex gap-12 items-center font-inter">
-            <a class="text-[10px] tracking-[0.4em] uppercase hover:opacity-50 transition-opacity" href="#">Shop</a>
-            <a class="text-[10px] tracking-[0.4em] uppercase hover:opacity-50 transition-opacity" href="#">Journal</a>
-            <a class="text-[10px] tracking-[0.4em] uppercase hover:opacity-50 transition-opacity" href="#">About</a>
-        </div>
-        <button class="material-symbols-outlined text-2xl hover:opacity-50 transition-opacity">menu</button>
-    </nav>
+    
+    <nav class="fixed top-0 w-full z-50 px-6 py-8 md:px-12 flex justify-between items-center mix-difference text-white">
+        <div class="text-xs tracking-[0.3em] uppercase font-bold font-inter">Mungstep</div>
+        <div class="hidden md:flex gap-12 items-center font-inter">
+            <a class="text-[10px] tracking-[0.4em] uppercase hover:opacity-50 transition-opacity" href="#">Shop</a>
+            <a class="text-[10px] tracking-[0.4em] uppercase hover:opacity-50 transition-opacity" href="#">Journal</a>
+            <a class="text-[10px] tracking-[0.4em] uppercase hover:opacity-50 transition-opacity" href="#">About</a>
+        </div>
+        <button class="material-symbols-outlined text-2xl hover:opacity-50 transition-opacity">menu</button>
+    </nav>
 
-    <main class="min-h-screen">
-        <section class="relative h-screen flex flex-col items-center justify-center overflow-hidden border-b border-primary/20 dark:border-white/20">
-            <div class="absolute inset-0 z-0">
-                <img alt="Aesthetic dog in nature" class="w-full h-full object-cover grayscale-[0.3] opacity-90 dark:opacity-60 img-hover-effect" src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee?q=80&w=2000&auto=format&fit=crop"/>
-            </div>
-            
-            <div class="z-10 text-center text-white mix-difference w-full px-4 mt-20">
-                <h1 class="text-hero font-display uppercase italic">Mungstep</h1>
-                <p class="mt-6 text-sm md:text-base font-light tracking-widest opacity-80">반려견을 위한 새로운 삶의 기준</p>
-            </div>
-            
-            <div class="absolute bottom-12 left-6 md:left-12 text-white mix-difference z-10">
-                <p class="text-[10px] tracking-[0.3em] uppercase mb-2 font-inter">2026 SS Collection</p>
-                <p class="font-display italic text-2xl md:text-3xl">Movement & Grace</p>
-            </div>
-        </section>
+    <main class="min-h-screen">
+        <section class="relative h-screen flex flex-col items-center justify-center overflow-hidden border-b border-primary/20 dark:border-white/20">
+            <div class="absolute inset-0 z-0">
+                <img alt="Aesthetic dog in nature" class="w-full h-full object-cover grayscale-[0.3] opacity-90 dark:opacity-60 img-hover-effect" src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee?q=80&w=2000&auto=format&fit=crop"/>
+            </div>
+            
+            <div class="z-10 text-center text-white mix-difference w-full px-4 mt-20">
+                <h1 class="text-hero font-display uppercase italic">Mungstep</h1>
+                <p class="mt-6 text-sm md:text-base font-light tracking-widest opacity-80">반려견을 위한 새로운 삶의 기준</p>
+            </div>
+            
+            <div class="absolute bottom-12 left-6 md:left-12 text-white mix-difference z-10">
+                <p class="text-[10px] tracking-[0.3em] uppercase mb-2 font-inter">2026 SS Collection</p>
+                <p class="font-display italic text-2xl md:text-3xl">Movement & Grace</p>
+            </div>
+        </section>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-            
-            <div class="border-b md:border-r border-primary/20 dark:border-white/20 p-12 md:p-16 flex flex-col justify-between aspect-square">
-                <h2 class="font-display text-4xl md:text-5xl italic leading-tight">Redefining<br/>the standard.</h2>
-                <div class="mt-auto space-y-6">
-                    <div class="flex flex-col gap-2 border-b border-primary/10 dark:border-white/10 pb-4">
-                        <span class="text-[10px] uppercase tracking-widest opacity-60 font-inter">Philosophy</span>
-                        <span class="text-sm leading-relaxed">디자인과 기능의 완벽한 조화. 일상 속 모든 발걸음이 예술이 됩니다.</span>
-                    </div>
-                </div>
-            </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+            
+            <div class="border-b md:border-r border-primary/20 dark:border-white/20 p-12 md:p-16 flex flex-col justify-between aspect-square">
+                <h2 class="font-display text-4xl md:text-5xl italic leading-tight">Redefining<br/>the standard.</h2>
+                <div class="mt-auto space-y-6">
+                    <div class="flex flex-col gap-2 border-b border-primary/10 dark:border-white/10 pb-4">
+                        <span class="text-[10px] uppercase tracking-widest opacity-60 font-inter">Philosophy</span>
+                        <span class="text-sm leading-relaxed">디자인과 기능의 완벽한 조화. 일상 속 모든 발걸음이 예술이 됩니다.</span>
+                    </div>
+                </div>
+            </div>
 
-            <div class="border-b lg:border-r border-primary/20 dark:border-white/20 p-12 flex items-center justify-center bg-zinc-50 dark:bg-zinc-900/30 aspect-square group cursor-pointer overflow-hidden relative">
-                <div class="w-4/5 aspect-[3/4] shadow-2xl overflow-hidden z-10">
-                    <img alt="Premium dog harness" class="w-full h-full object-cover img-hover-effect" src="https://images.unsplash.com/photo-1605027628030-9bb6f83535e6?q=80&w=1000&auto=format&fit=crop"/>
-                </div>
-                <div class="absolute bottom-8 left-8 z-20 bg-background-light/90 dark:bg-background-dark/90 px-6 py-4 backdrop-blur-sm">
-                    <p class="text-[10px] tracking-widest uppercase font-bold font-inter mb-1">Aero-Harness v.2</p>
-                    <p class="text-xs opacity-70">시그니처 오닉스 블랙</p>
-                </div>
-            </div>
+            <div class="border-b lg:border-r border-primary/20 dark:border-white/20 p-12 flex items-center justify-center bg-zinc-50 dark:bg-zinc-900/30 aspect-square group cursor-pointer overflow-hidden relative">
+                <div class="w-4/5 aspect-[3/4] shadow-2xl overflow-hidden z-10">
+                    <img alt="Premium dog harness" class="w-full h-full object-cover img-hover-effect" src="https://images.unsplash.com/photo-1605027628030-9bb6f83535e6?q=80&w=1000&auto=format&fit=crop"/>
+                </div>
+                <div class="absolute bottom-8 left-8 z-20 bg-background-light/90 dark:bg-background-dark/90 px-6 py-4 backdrop-blur-sm">
+                    <p class="text-[10px] tracking-widest uppercase font-bold font-inter mb-1">Aero-Harness v.2</p>
+                    <p class="text-xs opacity-70">시그니처 오닉스 블랙</p>
+                </div>
+            </div>
 
-            <div class="border-b border-primary/20 dark:border-white/20 p-12 md:p-16 flex flex-col justify-center aspect-square bg-primary text-white">
-                <h2 class="font-display text-5xl md:text-6xl leading-[0.9] mb-8 uppercase italic">Urban<br/>Stride</h2>
-                <p class="text-sm leading-relaxed opacity-80 mb-12 font-light break-keep">
-                    현대적인 도시의 반려견을 위해 세심하게 설계된 에센셜 컬렉션. 자유로운 움직임을 위한 인체공학적 디자인과 미니멀한 감성을 담았습니다.
-                </p>
-                <button class="w-fit border border-white/30 px-8 py-4 text-[10px] uppercase tracking-[0.2em] hover:bg-white hover:text-primary transition-all duration-300 font-inter">
-                    Shop Collection
-                </button>
-            </div>
+            <div class="border-b border-primary/20 dark:border-white/20 p-12 md:p-16 flex flex-col justify-center aspect-square bg-primary text-white">
+                <h2 class="font-display text-5xl md:text-6xl leading-[0.9] mb-8 uppercase italic">Urban<br/>Stride</h2>
+                <p class="text-sm leading-relaxed opacity-80 mb-12 font-light break-keep">
+                    현대적인 도시의 반려견을 위해 세심하게 설계된 에센셜 컬렉션. 자유로운 움직임을 위한 인체공학적 디자인과 미니멀한 감성을 담았습니다.
+                </p>
+                <button class="w-fit border border-white/30 px-8 py-4 text-[10px] uppercase tracking-[0.2em] hover:bg-white hover:text-primary transition-all duration-300 font-inter">
+                    Shop Collection
+                </button>
+            </div>
 
-            <div class="border-b md:border-r border-primary/20 dark:border-white/20 p-0 flex items-center justify-center aspect-square bg-zinc-100 dark:bg-zinc-900 overflow-hidden group">
-                <img alt="Close up dog" class="w-full h-full object-cover img-hover-effect grayscale group-hover:grayscale-0" src="https://images.unsplash.com/photo-1537151608804-ea6fac25d474?q=80&w=1000&auto=format&fit=crop"/>
-            </div>
+            <div class="border-b md:border-r border-primary/20 dark:border-white/20 p-0 flex items-center justify-center aspect-square bg-zinc-100 dark:bg-zinc-900 overflow-hidden group">
+                <img alt="Close up dog" class="w-full h-full object-cover img-hover-effectgrayscale group-hover:grayscale-0" src="https://images.unsplash.com/photo-1537151608804-ea6fac25d474?q=80&w=1000&auto=format&fit=crop"/>
+            </div>
 
-            <div class="border-b lg:border-r border-primary/20 dark:border-white/20 p-12 md:p-16 flex flex-col justify-center space-y-10 aspect-square">
-                <p class="text-[10px] leading-relaxed opacity-60 uppercase tracking-widest font-inter">
-                    Our Story
-                </p>
-                <p class="text-lg md:text-xl font-display italic leading-relaxed">
-                    "We create products that highlight your uniqueness."
-                </p>
-                <p class="text-sm leading-relaxed opacity-80 break-keep font-light">
-                    우리는 각자의 고유함을 존중합니다. 당신과 반려견이 교감하는 모든 순간이 가장 나답고 아름다울 수 있도록 고민합니다.
-                </p>
-            </div>
+            <div class="border-b lg:border-r border-primary/20 dark:border-white/20 p-12 md:p-16 flex flex-col justify-center space-y-10 aspect-square">
+                <p class="text-[10px] leading-relaxed opacity-60 uppercase tracking-widest font-inter">
+                    Our Story
+                </p>
+                <p class="text-lg md:text-xl font-display italic leading-relaxed">
+                    "We create products that highlight your uniqueness."
+                </p>
+                <p class="text-sm leading-relaxed opacity-80 break-keep font-light">
+                    우리는 각자의 고유함을 존중합니다. 당신과 반려견이 교감하는 모든 순간이 가장 나답고 아름다울 수 있도록 고민합니다.
+                </p>
+            </div>
 
-            <div class="border-b border-primary/20 dark:border-white/20 p-12 md:p-16 flex items-end justify-start aspect-square bg-zinc-50 dark:bg-zinc-900/50">
-                <div class="space-y-6 w-full">
-                    <h3 class="font-display text-4xl italic opacity-30">Mung.</h3>
-                    <div class="flex justify-between items-end border-t border-primary/10 dark:border-white/10 pt-4">
-                        <p class="text-[10px] tracking-[0.3em] uppercase opacity-50 font-inter">Seoul</p>
-                        <p class="text-[10px] tracking-[0.3em] uppercase opacity-50 font-inter">Est. 2024</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <footer class="py-12 px-6 md:px-12 flex flex-col md:flex-row justify-between items-start md:items-center gap-12 font-inter">
-            <div class="flex flex-col gap-2">
-                <div class="text-[10px] uppercase tracking-[0.3em] opacity-50">
-                    Designed by Studio Mung
-                </div>
-                <div class="text-[10px] uppercase tracking-[0.3em] opacity-50">
-                    Creative Director. Sunwoo
-                </div>
-            </div>
-            
-            <div class="flex gap-8 md:gap-16">
-                <a class="text-[10px] uppercase tracking-[0.3em] hover:opacity-100 opacity-60 transition-opacity" href="#">Instagram</a>
-                <a class="text-[10px] uppercase tracking-[0.3em] hover:opacity-100 opacity-60 transition-opacity" href="#">Journal</a>
-                <a class="text-[10px] uppercase tracking-[0.3em] hover:opacity-100 opacity-60 transition-opacity" href="#">Contact</a>
-            </div>
-            
-            <div class="text-[10px] uppercase tracking-[0.3em] opacity-40">
-                © 2026 Mungstep. All Rights Reserved.
-            </div>
-        </footer>
-    </main>
-
-    <button class="fixed bottom-8 right-8 w-12 h-12 rounded-full border border-primary/10 dark:border-white/10 bg-background-light dark:bg-background-dark flex items-center justify-center shadow-lg z-50 hover:scale-110 transition-transform" onclick="document.documentElement.classList.toggle('dark')">
-        <span class="material-symbols-outlined text-xl dark:hidden opacity-70">dark_mode</span>
-        <span class="material-symbols-outlined text-xl hidden dark:block opacity-70">light_mode</span>
-    </button>
-</body>
-</html>
+            <div class="border-b border-primary/20 dark:border-white/20 p-12 md:p-16 flex items-end justify-start aspect-square bg-zinc-50 dark:bg-zinc-900/50">
+                <div class="space-y-6 w-full">
+                    <h3 class="font-display text-4xl italic opacity-30">Mung.</h3>
+                    <div class="flex justify-between items-end border-t border-primary/10 dark:border-white/10 pt-4">
+                        <p class="text-[10px] tracking-[0.3em] uppercase opacity-50 font-inter">Seoul</p>
+                      0: 0px 5px 10px rgba(0,0,0,0.5); font-family: 'Bodoni Moda', serif;"&gt;mungstep&lt;/span&gt;&lt;/div&gt;
+                          &lt;div class="absolute inset-0 z-0"&gt;
+                              &lt;img alt="Aesthetic dog in nature" class="w-full h-full object-cover img-hover-effect" src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee?q=80&amp;w=2000&amp;auto=format&amp;fit=crop"/&gt;
+                          &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class="border-b lg:border-r border-primary/20 dark:border-white/20 p-12 md:p-16 flex flex-col justify-center space-y-10 aspect-square"&gt;
+                      &lt;p class="text-[10px] leading-relaxed opacity-60 uppercase tracking-widest font-inter"&gt; Our Story &lt;/p&gt;
+                      &lt;p class="text-lg md:text-xl font-display italic leading-relaxed"&gt; "We create products that highlight your uniqueness." &lt;/p&gt;
+                      &lt;p class="text-sm leading-relaxed opacity-80 break-keep font-light"&gt; 우리는 각자의 고유함을 존중합니다. 당신과 반려견이 교감하는 모든 순간이 가장 나답고 아름다울 수 있도록 고민합니다. &lt;/p&gt;
+                    &lt;/div&gt;
+                    &lt;div class="border-b border-primary/20 dark:border-white/20 p-12 md:p-16 flex items-end justify-start aspect-square bg-zinc-50 dark:bg-zinc-900/50"&gt;
+                      &lt;div class="space-y-6 w-full"&gt;
+                        &lt;h3 class="font-display text-4xl italic opacity-30"&gt;Mung.&lt;/h3&gt;
+                        &lt;div class="flex justify-between items-end border-t border-primary/10 dark:border-white/10 pt-4"&gt;
+                          &lt;p class="text-[10px] tracking-[0.3em] uppercase opacity-50 font-inter"&gt;Seoul&lt;/p&gt;
+                          &lt;p class="text-[10px] tracking-[0.3em] uppercase opacity-50 font-inter"&gt;Est. 2024&lt;/p&gt;
+                        &lt;/div&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;footer class="py-12 px-6 md:px-12 flex flex-col md:flex-row justify-between items-start md:items-center gap-12 font-inter"&gt;
+                    &lt;div class="flex flex-col gap-2"&gt;
+                      &lt;div class="text-[10px] uppercase tracking-[0.3em] opacity-50"&gt; Designed by Studio Mung &lt;/div&gt;
+                      &lt;div class="text-[10px] uppercase tracking-[0.3em] opacity-50"&gt; Creative Director. Sunwoo &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class="flex gap-8 md:gap-16"&gt;
+                      &lt;a class="text-[10px] uppercase tracking-[0.3em] hover:opacity-100 opacity-60 transition-opacity" href="#"&gt;Instagram&lt;/a&gt;
+                      &lt;a class="text-[10px] uppercase tracking-[0.3em] hover:opacity-100 opacity-60 transition-opacity" href="#"&gt;Journal&lt;/a&gt;
+                      &lt;a class="text-[10px] uppercase tracking-[0.3em] hover:opacity-100 opacity-60 transition-opacity" href="#"&gt;Contact&lt;/a&gt;
+                    &lt;/div&gt;
+                    &lt;div class="text-[10px] uppercase tracking-[0.3em] opacity-40"&gt; © 2026 Mungstep. All Rights Reserved. &lt;/div&gt;
+                &lt;/footer&gt;
+            &lt;/main&gt;
+            &lt;button class="fixed bottom-8 right-8 w-12 h-12 rounded-full border border-primary/10 dark:border-white/10 bg-background-light dark:bg-background-dark flex items-center justify-center shadow-lg z-50 hover:scale-110 transition-transform" onclick="document.documentElement.classList.toggle('dark')"&gt;
+              &lt;span class="material-symbols-outlined text-xl dark:hidden opacity-70"&gt;dark_mode&lt;/span&gt;
+              &lt;span class="material-symbols-outlined text-xl hidden dark:block opacity-70"&gt;light_mode&lt;/span&gt;
+            &lt;/button&gt;
+        &lt;/body&gt;
+&lt;/html&gt;
